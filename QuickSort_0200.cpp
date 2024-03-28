@@ -32,7 +32,7 @@ void input() {
         int pivot, i, j;
         if (low > high) { // step 1
             return;
-        }   
+        }
         pivot = arr[low]; // step 2
         i = low + 1; // step 3
         j = high; //  step 4
@@ -58,4 +58,8 @@ void input() {
             //Recursive call to sort the right sub array
             q_short(j + 1, high); // Step 13
         }
-        }
+    }
+    void display() {
+        cout << "\n----------" << endl;
+        cout << "Sorted Array" << endl;
+        cout << "------------" << endl;
