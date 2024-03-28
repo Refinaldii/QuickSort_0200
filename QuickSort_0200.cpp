@@ -37,4 +37,8 @@ void input() {
         i = low + 1; // step 3
         j = high; //  step 4
         while (i <= j) { //step 10
+            while ((arr[i] <= pivot) && (i <= high)) { // step 5
+                i++; //step 6
+                cmp_count++;
+            }
         }
